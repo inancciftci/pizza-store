@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { formatCurrency } from "../../utils/helpers";
 
 function MenuItem({ pizza }) {
@@ -5,7 +6,7 @@ function MenuItem({ pizza }) {
 
   return (
     <li>
-      <img src={imageUrl} alt={name} />
+      <img src={imageUrl} alt={`${name} ${id}`} />
       <div>
         <p>{name}</p>
         <p>{ingredients.join(', ')}</p>
